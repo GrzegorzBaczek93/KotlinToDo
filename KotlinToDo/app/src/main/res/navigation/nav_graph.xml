@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/itemList">
+
+    <fragment
+        android:id="@+id/itemList"
+        android:name="com.grzeg.kotlintodo.listview.ItemList"
+        android:label="Todo List"
+        tools:layout="@layout/item_list_fragment" >
+
+        <action
+            android:id="@+id/fab_action"
+            app:destination="@id/createItem"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createItem"
+        android:name="com.grzeg.kotlintodo.createview.CreateItem"
+        android:label="Create item"
+        tools:layout="@layout/create_item_fragment" >
+    </fragment>
+</navigation>
