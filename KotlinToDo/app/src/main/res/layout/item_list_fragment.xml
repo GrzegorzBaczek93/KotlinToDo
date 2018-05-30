@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.grzeg.kotlintodo.listview.ItemListViewModel" />
+            type="com.grzeg.kotlintodo.ui.listview.ItemListViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,7 +12,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".listview.ItemList">
+        tools:context=".ui.listview.ItemList">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/floating_action_button"

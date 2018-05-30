@@ -5,14 +5,14 @@
 
         <variable
             name="viewModel"
-            type="com.grzeg.kotlintodo.createview.CreateItemViewModel" />
+            type="com.grzeg.kotlintodo.ui.createview.CreateItemViewModel" />
     </data>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".createview.CreateItem">
+        tools:context=".ui.createview.CreateItem">
 
         <TextView
             android:layout_width="match_parent"

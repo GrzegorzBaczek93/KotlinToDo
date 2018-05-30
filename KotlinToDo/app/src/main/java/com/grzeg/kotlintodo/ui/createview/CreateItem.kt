@@ -1,4 +1,4 @@
-package com.grzeg.kotlintodo.createview
+package com.grzeg.kotlintodo.ui.createview
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle

@@ -1,7 +1,7 @@
-package com.grzeg.kotlintodo.createview
+package com.grzeg.kotlintodo.ui.listview
 
 import android.arch.lifecycle.ViewModel;
 
-class CreateItemViewModel : ViewModel() {
+class ItemListViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

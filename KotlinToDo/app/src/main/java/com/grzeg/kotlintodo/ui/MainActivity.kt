@@ -1,4 +1,4 @@
-package com.grzeg.kotlintodo
+package com.grzeg.kotlintodo.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.grzeg.kotlintodo.R
 
 class MainActivity : AppCompatActivity() {
 

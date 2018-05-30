@@ -40,6 +40,7 @@ ext {
     espressoVersion = "2.2.2"
     navigationVersion = "1.0.0-alpha01"
     constraintLayoutVersion = "1.1.0"
+    room_version = "1.1.0"
 }
 
 
@@ -63,4 +64,7 @@ dependencies {
     implementation 'android.arch.navigation:navigation-fragment:' + navigationVersion
     implementation 'android.arch.navigation:navigation-ui:' + navigationVersion
 
+
+    implementation "android.arch.persistence.room:runtime:" + room_version
+    annotationProcessor "android.arch.persistence.room:compiler:" + room_version
 }

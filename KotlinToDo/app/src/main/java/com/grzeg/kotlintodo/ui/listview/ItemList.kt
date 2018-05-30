@@ -1,4 +1,4 @@
-package com.grzeg.kotlintodo.listview
+package com.grzeg.kotlintodo.ui.listview
 
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/itemList"
-        android:name="com.grzeg.kotlintodo.listview.ItemList"
+        android:name="com.grzeg.kotlintodo.ui.listview.ItemList"
         android:label="Todo List"
         tools:layout="@layout/item_list_fragment" >
 
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/createItem"
-        android:name="com.grzeg.kotlintodo.createview.CreateItem"
+        android:name="com.grzeg.kotlintodo.ui.createview.CreateItem"
         android:label="Create item"
         tools:layout="@layout/create_item_fragment" >
     </fragment>
