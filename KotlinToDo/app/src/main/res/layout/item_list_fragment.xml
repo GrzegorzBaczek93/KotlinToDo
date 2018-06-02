@@ -21,7 +21,7 @@
             android:layout_margin="20dp"
             android:clickable="true"
             android:focusable="true"
-            android:src="@android:drawable/ic_input_add"
+            android:src="@android:drawable/ic_menu_edit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 

@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation.findNavController
+import com.grzeg.kotlintodo.R
 
 import com.grzeg.kotlintodo.databinding.CreateItemFragmentBinding
 
@@ -24,5 +26,17 @@ class CreateItem : Fragment() {
         viewModel = ViewModelProviders.of(this).get(CreateItemViewModel::class.java)
 
         return dataBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupFabListener()
+    }
+
+    private fun setupFabListener() {
+        dataBinding.floatingActionButton.setOnClickListener {
+            findNavController(it).popBackStack()
+        }
     }
 }

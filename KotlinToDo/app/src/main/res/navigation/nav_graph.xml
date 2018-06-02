@@ -24,5 +24,6 @@
         android:name="com.grzeg.kotlintodo.ui.createview.CreateItem"
         android:label="Create item"
         tools:layout="@layout/create_item_fragment" >
+
     </fragment>
 </navigation>
