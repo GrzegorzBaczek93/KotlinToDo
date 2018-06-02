@@ -8,16 +8,33 @@
             type="com.grzeg.kotlintodo.ui.createview.CreateItemViewModel" />
     </data>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.createview.CreateItem">
 
-        <TextView
+        <EditText
+            android:id="@+id/item_title"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="CreateItemFragment" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/create_item_title_hint"
+            android:inputType="textAutoCorrect" />
 
-    </FrameLayout>
+        <EditText
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/create_item_description_hint"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:maxLines="6"
+            app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    </android.support.constraint.ConstraintLayout>
 </layout>
